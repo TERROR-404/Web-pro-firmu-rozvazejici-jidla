@@ -1,0 +1,99 @@
+.line{
+    background-color: #40A4B9;
+    width: 100%;
+    height: 6px;
+}
+main > .aboutUs{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+main > .aboutUs > .picture{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .aboutUs > .picture > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 200px;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.25);
+    align-self: center;
+}
+main > .aboutUs > .text{
+    height: 100%;
+    width: 60%;
+}
+main > .services{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+main > .caterings{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    column-gap: 10%;
+}
+main > .caterings > .left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    row-gap: 60px;
+}
+main > .caterings > .picture{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+main > .caterings > .picture > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 200px;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.25);
+}
+main > .delivery{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10%;
+}
+main > .delivery > .left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    row-gap: 60px;
+}
+.header2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main > .delivery > .picture{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+main > .delivery > .picture > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 200px;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.25);
+}
+footer{
+    margin-top: 1810px; /*tento margin bude později dynamický pomocí js*/
+}
