@@ -41,7 +41,8 @@ header > .logo > img{
     width: auto;
     margin-left: 10px;
 }
-header > nav {
+header > ul {
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: right;
@@ -52,8 +53,15 @@ header > nav {
     font-size: 24px;
     font-weight: 600;
     line-height: normal;
+    list-style: none;
 }
-header > nav > .button{
+header > ul > li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > ul > li > .button{
     height: 55%;
     width: 160px;
     padding-right: 10px;
@@ -64,7 +72,7 @@ header > nav > .button{
     border: 7px solid white;
     border-radius: 15px;
 }
-header > nav > .login{
+header > ul > li > .login{
     height: 55%;
     display: flex;
     padding-right: 10px;
@@ -79,13 +87,13 @@ header > nav > .login{
     margin-left: 5%;
     column-gap: 20px;
 }
-header > nav > .login > i{
+header > ul > li > .login > i{
    font-size: 40px; 
 }
-header > nav > .button:hover{
+header > ul > li > .button:hover{
     background-color: rgba(0, 0, 0, 0.15);
 }
-header > nav > .login:hover{
+header > ul > li > .login:hover{
     background-color: rgba(0, 0, 0, 0.15);
     color: white;
 }

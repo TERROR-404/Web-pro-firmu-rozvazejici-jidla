@@ -97,3 +97,7 @@ main > .delivery > .picture > img{
 footer{
     margin-top: 1810px; /*tento margin bude později dynamický pomocí js*/
 }
+
+@media(max-width: 1120px){
+
+}
