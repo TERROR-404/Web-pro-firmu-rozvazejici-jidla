@@ -172,7 +172,6 @@ main{
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    top: 415px;
     width: 50%;
 }
 
@@ -227,6 +226,11 @@ main{
     .presentation > .quote{
         font-size: 25px;
         line-height: 30px;
+    }
+    main{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
