@@ -10,8 +10,11 @@ addEventListener("resize",(event) =>{
 
     let main = document.getElementsByTagName('main')[0];
     let footer = document.getElementsByTagName('footer')[0];
-    if (width < 820) {
-        main.style.top = 347 + "px";
+    if (width < 460) {
+        main.style.top = 257 + "px";
+    }
+    else if (width < 820) {
+        main.style.top = 297 + "px";
     }
     else{
         main.style.top = 415 + "px";
@@ -32,8 +35,11 @@ addEventListener("load",(event) =>{
 
     let main = document.getElementsByTagName('main')[0];
     let footer = document.getElementsByTagName('footer')[0];
-    if (width < 820) {
-        main.style.top = 347 + "px";
+    if (width < 460) {
+        main.style.top = 257 + "px";
+    }
+    else if (width < 820) {
+        main.style.top = 297 + "px";
     }
     else{
         main.style.top = 415 + "px";

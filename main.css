@@ -63,9 +63,9 @@ header > ul > li{
 }
 header > ul > li > .button{
     height: 55%;
-    width: 160px;
-    padding-right: 10px;
-    padding-left: 10px;
+    width: 180px;
+    padding-right: 5%;
+    padding-left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,13 +148,16 @@ h2{
 }
 footer{
     background-color: #B1B1B1;
-    width: 100%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
     height: 340px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
 }
 footer > .text{
     margin-bottom: 20px;
@@ -206,7 +209,7 @@ main{
 @media(max-width: 820px){
     header{
         height: 80px;
-        }
+    }
     header > .logo{
         width: 150px;
     }
@@ -232,6 +235,9 @@ main{
         padding-left: 5%;
         padding-right: 5%;
     }
+    footer{
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 720px){
@@ -239,7 +245,7 @@ main{
         font-size: 13px;
     }
     header > ul > li > .button{
-        width: 60px;
+        width: auto;
     }
     header > ul > li > .login{
         margin-right: 10%;
@@ -247,9 +253,35 @@ main{
     }
     header > ul > li > .login > i{
        font-size: 20px; 
-    }    
+    }
+    .presentation{
+        column-gap: 20px;
+    }  
+    .presentation > .quote{
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 10px;
+    }
+    .presentation > img{
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 460px){
+    header{
+        height: 60px;
+    }
+    header > .logo{
+        width: 100px;
+    }
+    header > .logo > img{
+        height: 40px;
+    }
+    .presentation{
+        height: 197px;
+    }
     .presentation > .quote{
         font-size: 20px;
         line-height: 25px;
     }
-} /*360px*/
+}
