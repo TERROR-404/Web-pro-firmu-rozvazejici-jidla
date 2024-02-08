@@ -4,7 +4,7 @@ main > .mainImage{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 100px;
+    column-gap: 15%;
 }
 main > .mainImage > img{
     width: 50%;
@@ -68,4 +68,13 @@ main > .arrows > i{
 }
 main > .arrows > i:hover{
     cursor: pointer;
+}
+
+@media(max-width: 600px){
+    main > .mainImage{
+        column-gap: 8%;
+    }
+    main > .mainImage > i{
+        font-size: 50px;
+    }
 }

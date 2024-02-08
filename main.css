@@ -167,8 +167,8 @@ main{
     box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.15);
     height: auto;
     padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -176,6 +176,17 @@ main{
     align-items: center;
     position: absolute;
     width: 50%;
+}
+
+@media(max-width: 1400px){
+    h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 40px;
+    }
 }
 
 @media(max-width: 1120px){
@@ -234,6 +245,7 @@ main{
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+        padding-top: 50px;
     }
     footer{
         font-size: 15px;
@@ -266,8 +278,15 @@ main{
         margin-right: 10px;
     }
 }
-
+@media(max-width: 530px){
+    .header{
+        width: 70%;
+    }
+}
 @media(max-width: 460px){
+    .header{
+        width: 90%;
+    }
     header{
         height: 60px;
     }
