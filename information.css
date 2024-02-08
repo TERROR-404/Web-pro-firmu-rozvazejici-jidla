@@ -67,3 +67,62 @@ main > .register{
 main > .register >.text{
     width: 100%;
 }
+
+@media(max-width: 1380px){
+    body{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media(max-width: 1000px){
+    body{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+@media(max-width: 820px){
+    body{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media(max-width: 650px){
+    main > .contacts{
+        column-gap: 5%;
+        margin-top: 30px;
+    }
+    main > .contacts > .left{
+        width: 65%;
+        row-gap: 30px;
+    }
+    main > .contacts > .picture{
+        width: 30%;
+    }
+    ul{
+        margin-left: 10px;
+    }
+    main > .terms{
+        margin-top: 30px;
+    }
+    main > .register{
+        margin-top: 30px;
+    }
+}
+@media(max-width: 500px){
+    body{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    main > .contacts{
+        column-gap: 0%;
+    }
+    main > .contacts > .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 50px;
+    }
+    main > .contacts > .picture{
+        width: 0%;
+    }
+}
