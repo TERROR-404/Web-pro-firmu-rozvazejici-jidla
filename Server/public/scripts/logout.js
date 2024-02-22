@@ -1,0 +1,1 @@
+// logout pokud se mu vytvori nova stranka
