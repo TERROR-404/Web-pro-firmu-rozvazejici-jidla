@@ -1,8 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import Joi from "joi"; // validace dat pozdeji
-import bcrypt, { hash } from "bcrypt"; // hashing hesel pozdeji
+//import Joi, { date } from "joi"; // validace dat pozdeji
+//import bcrypt, { hash } from "bcrypt"; // hashing hesel pozdeji
+//import helmet
 
 import pg from "pg";
 const { Client } = pg
@@ -89,7 +90,33 @@ app.post("/login", async (req, res) => {
     }
 })
 
-app.get("/food", (req, res) => { // server vrati jidelni listek na dalsi tyden
+app.get("/food", async (req, res) => { // server vrati jidelni listek na dalsi tyden
+    let date = new Date();
+    date.setDate(date.getDate() + (((1 + 7 - date.getDay()) % 7) || 7));
+    let firstDate = date.toISOString().split('T')[0]; // https://stackoverflow.com/questions/23593052/format-javascript-date-as-yyyy-mm-dd
+    date.setDate(date.getDate() + 1);
+    let secondDate= date.toISOString().split('T')[0];
+    date.setDate(date.getDate() + 1);
+    let thirdDate= date.toISOString().split('T')[0];
+    date.setDate(date.getDate() + 1);
+    let fourthDate= date.toISOString().split('T')[0];
+    date.setDate(date.getDate() + 1);
+    let fifthDate= date.toISOString().split('T')[0];
+
+    let Foods = [];
+
+    try {
+        const result = await client.query(`SELECT *
+	FROM "Food"
+	WHERE date=$1 OR date=$2 OR date=$3 OR date=$4 OR date=$5`, [firstDate, secondDate, thirdDate, fourthDate, fifthDate]);
+        Foods = result.rows;
+        res.json(Foods)
+    } catch (error) {
+        res.status(500);
+        res.json({ message: "Nastala chyba" })
+        return;
+    }
+
 
 })
 
