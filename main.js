@@ -72,7 +72,6 @@ addEventListener("resize",(event) =>{
 
         })
     } else{
-        console.log(present.innerText);
         switch (present.innerText) {
             case "Jídelní lístek":
                 header.innerHTML = `<a href="index.html" class="logo">
