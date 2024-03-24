@@ -108,7 +108,7 @@ header > ul > li > .login:hover{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    column-gap: 90px;
+    column-gap: 10%;
 }
 .presentation > .quote{
     color: white;
@@ -116,8 +116,9 @@ header > ul > li > .login:hover{
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 50px;
-    margin-left: 100px;
+    margin-left: 10%;
     line-height: 50px;
+    width: 70%;
 }
 .presentation > img{
     width: 10%;
@@ -205,12 +206,10 @@ main{
        font-size: 25px; 
     }
     .presentation{
-        column-gap: 50px;
     }    
     .presentation > .quote{
-        font-size: 30px;
-        line-height: 35px;
-        margin-left: 50px;
+        font-size: 32px;
+        line-height: 37px;
     }
     .presentation > img{
         width: 20%;
@@ -238,8 +237,8 @@ main{
         height: 217px;
     }
     .presentation > .quote{
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 27px;
+        line-height: 32px;
     }
     main{
         width: 90%;
@@ -267,12 +266,10 @@ main{
        font-size: 20px; 
     }
     .presentation{
-        column-gap: 20px;
     }  
     .presentation > .quote{
-        font-size: 20px;
-        line-height: 25px;
-        margin-left: 10px;
+        font-size: 23px;
+        line-height: 28px;
     }
     .presentation > img{
         margin-right: 10px;
