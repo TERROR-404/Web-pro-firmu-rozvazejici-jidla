@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B&B - Dobré jídlo z Vodochod</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/gallery.css">
 </head>
@@ -18,10 +17,10 @@
         <a href="index.html" class="logo">
             <img src="images/b&blogo.png" alt="logo">
         </a>
-        <ul>
+        <ul id="navigation">
                 <li><a href="orders.html" class="button">Jídelní lístek</a></li>
                 <li><a href="information.html" class="button">Informace</a></li>
-                <li><a href="gallery.html" class="button">Galerie</a></li>
+                <li><a id="present" href="gallery.html" class="button">Galerie</a></li>
                 <li><a href="login.html" class="login" id="login"><i class="fa-solid fa-right-to-bracket"></i> Přihlášení</a></li>
                 <li><a href="login.html" class="login" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Odhlásit</a></li>
         </ul>
@@ -37,38 +36,39 @@
         </article>
         <article class="mainImage">
             <i class="fa-solid fa-chevron-left"></i>
-            <img src="images/food3.jpg" alt="mainImage">
+            <img id="mainImage" src="images/food1.jpg" alt="food1">
             <i class="fa-solid fa-chevron-right"></i>
         </article>
         <article class="imagesContainer">
             <section class="images">
-                <img id="chosen" src="images/food3.jpg" alt="image">
-                <img src="images/food1.jpg" alt="image">
-                <img src="images/food21.jpg" alt="image">
-                <img src="images/food4.jpg" alt="image">
-                <img src="images/food5.jpg" alt="image">
-                <img src="images/food6.jpg" alt="image">
-                <img src="images/food7.jpg" alt="image">
-                <img src="images/food8.jpg" alt="image">
-                <img src="images/food9.jpg" alt="image">
-                <img src="images/food10.jpg" alt="image">
-                <img src="images/food11.jpg" alt="image">
-                <img src="images/food12.jpg" alt="image">
-                <img src="images/food13.jpg" alt="image">
-                <img src="images/food14.jpg" alt="image">
-                <img src="images/food15.jpg" alt="image">
-                <img src="images/food16.jpg" alt="image">
-                <img src="images/food17.jpg" alt="image">
-                <img src="images/food18.jpg" alt="image">
-                <img src="images/food19.jpg" alt="image">
-                <img src="images/food20.jpg" alt="image">
+                <img class="galleryImages" id="chosen" src="images/food1.jpg" alt="food1">
+                <img class="galleryImages" src="images/food2.jpg" alt="food2">
+                <img class="galleryImages" src="images/food3.jpg" alt="food3">
+                <img class="galleryImages" src="images/food4.jpg" alt="food4">
+                <img class="galleryImages" src="images/food5.jpg" alt="food5">
+                <img class="galleryImages" src="images/food6.jpg" alt="food6">
+                <img class="galleryImages" src="images/food7.jpg" alt="food7">
+                <img class="galleryImages" src="images/food8.jpg" alt="food8">
+                <img class="galleryImages" src="images/food9.jpg" alt="food9">
+                <img class="galleryImages" src="images/food10.jpg" alt="food10">
+                <img class="galleryImages" src="images/food11.jpg" alt="food11">
+                <img class="galleryImages" src="images/food12.jpg" alt="food12">
+                <img class="galleryImages" src="images/food13.jpg" alt="food13">
+                <img class="galleryImages" src="images/food14.jpg" alt="food14">
+                <img class="galleryImages" src="images/food15.jpg" alt="food15">
+                <img class="galleryImages" src="images/food16.jpg" alt="food16">
+                <img class="galleryImages" src="images/food17.jpg" alt="food17">
+                <img class="galleryImages" src="images/food18.jpg" alt="food18">
+                <img class="galleryImages" src="images/food19.jpg" alt="food19">
+                <img class="galleryImages" src="images/food20.jpg" alt="food20">
             </section>
         </article>
-        <article class="arrows"><i class="fa-solid fa-chevron-left"></i>1/6<i class="fa-solid fa-chevron-right"></i></article>
+        <article class="arrows"><i class="fa-solid fa-chevron-left"></i><section id="page">1/2</section><i class="fa-solid fa-chevron-right"></i></article>
     </main>
     <footer>
         <section class="text"><i class="fa-regular fa-copyright"></i> 2024 B&B Dobré jídlo z Vodochod. Všechna práva vyhrazena.</section>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
 </body>
 </html>
