@@ -95,20 +95,28 @@ app.get("/food", async (req, res) => { // server vrati jidelni listek na dalsi t
     date.setDate(date.getDate() + (((1 + 7 - date.getDay()) % 7) || 7));
     let firstDate = date.toISOString().split('T')[0]; // https://stackoverflow.com/questions/23593052/format-javascript-date-as-yyyy-mm-dd
     date.setDate(date.getDate() + 1);
-    let secondDate= date.toISOString().split('T')[0];
+    let secondDate = date.toISOString().split('T')[0];
     date.setDate(date.getDate() + 1);
-    let thirdDate= date.toISOString().split('T')[0];
+    let thirdDate = date.toISOString().split('T')[0];
     date.setDate(date.getDate() + 1);
-    let fourthDate= date.toISOString().split('T')[0];
+    let fourthDate = date.toISOString().split('T')[0];
     date.setDate(date.getDate() + 1);
-    let fifthDate= date.toISOString().split('T')[0];
+    let fifthDate = date.toISOString().split('T')[0];
 
     let Foods = [];
+
+console.log("jidlo odeslano");
+console.log(firstDate);
 
     try {
         const result = await client.query(`SELECT *
 	FROM "Food"
-	WHERE date=$1 OR date=$2 OR date=$3 OR date=$4 OR date=$5`, [firstDate, secondDate, thirdDate, fourthDate, fifthDate]);
+	WHERE date=$1 OR date=$2 OR date=$3 OR date=$4 OR date=$5 
+    ORDER BY "date", CASE
+    WHEN "type" = 'Soup' THEN 1
+    WHEN "type" = 'Main' THEN 2
+    WHEN "type" = 'Salad' THEN 3
+    END ASC`, [firstDate, secondDate, thirdDate, fourthDate, fifthDate]);
         Foods = result.rows;
         res.json(Foods)
     } catch (error) {
