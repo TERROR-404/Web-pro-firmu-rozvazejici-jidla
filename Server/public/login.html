@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B&B - Dobré jídlo z Vodochod</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +19,16 @@
         <a href="index.html" class="logo">
             <img src="images/b&blogo.png" alt="logo">
         </a>
-        <ul>
+        <ul id="navigation">
                 <li><a href="orders.html" class="button">Jídelní lístek</a></li>
                 <li><a href="information.html" class="button">Informace</a></li>
                 <li><a href="gallery.html" class="button">Galerie</a></li>
-                <li><a href="login.html" class="login" id="login"><i class="fa-solid fa-right-to-bracket"></i> Přihlášení</a></li>
+                <li><a  id="present" href="login.html" class="login" id="login"><i class="fa-solid fa-right-to-bracket"></i> Přihlášení</a></li>
                 <li><a href="login.html" class="login" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Odhlásit</a></li>
         </ul>
     </header>
     <article class="presentation">
-        <section class="quote">“Lorem ipsum dolor sit amet, consectetuer adipiscing eli.”</section>
+        <section class="quote">B&B Dobré jídlo z Vodochod</section>
         <img src="images/dad.jpg" alt="profile">
     </article>
     <main>
@@ -39,7 +40,7 @@
             <img src="images/google.png" alt="google"> Přihlásit se přes Google
         </article>
         <section class="or">NEBO</section>
-        <form>
+        <form action="action.php">
             <label for="e-mail">E-MAIL</label>
             <input id="e-mail" type="email" placeholder="Váš e-mail">
             <label for="password">Heslo</label>

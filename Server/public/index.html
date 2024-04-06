@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B&B - Dobré jídlo z Vodochod</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
         <a href="index.html" class="logo">
             <img src="images/b&blogo.png" alt="logo">
         </a>
-        <ul>
+        <ul id="navigation">
                 <li><a href="orders.html" class="button">Jídelní lístek</a></li>
                 <li><a href="information.html" class="button">Informace</a></li>
                 <li><a href="gallery.html" class="button">Galerie</a></li>
@@ -27,7 +28,7 @@
         </ul>
     </header>
     <article class="presentation">
-        <section class="quote">“Lorem ipsum dolor sit amet, consectetuer adipiscing eli.”</section>
+        <section class="quote">B&B Dobré jídlo z Vodochod</section> <!-- návrh-> “Co vaříme, to taky jíme!” -->
         <img src="images/dad.jpg" alt="profile">
     </article>
     <main>
@@ -39,14 +40,15 @@
             <section class="picture">
                 <img src="images/dad.jpg" alt="profile">
             </section>
-            <section class="text">Jsme rodinná firma. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean vel massa quis mauris vehicula lacinia. Fusce aliquam vestibulum ipsum. Vivamus porttitor turpis ac leo. Pellentesque sapien. Praesent in mauris eu tortor porttitor accumsan. Integer vulputate sem a nibh rutrum consequat. Phasellus rhoncus. Curabitur sagittis hendrerit ante. Pellentesque pretium lectus id turpis. Nulla est. Etiam dictum tincidunt diam. Pellentesque arcu.</section>
+            <section class="text">
+                Jsme rodinná firma, kde otec vaří a matka vede a managuje firmu. Máme dloholeté zkušenosti ve vaření, zavážení jídel (pro jednotlivce i firmy), s kateringy, kantýnami, ale i s pořádáním svateb. Působíme hlavně v okresu Praha Východ, ale pro větší zakázky se mohou udělat výjimky. Soustředíme se výhradně na dlouhodobou spolupráci, než na jednorázové rozvozy. Našimi hlavními přednostmi jsou výrazně nízká cena a dobrá kvalita.</section>
         </article>
         <article class="header">
             <h1>Služby</h1>
             <hr class="line"></hr>
         </article>
         <article class="services">
-            Jsme rodinná firma. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean vel massa quis mauris vehicula lacinia. Fusce aliquam vestibulum ipsum. Vivamus porttitor turpis ac leo. Pellentesque sapien. Praesent in mauris eu tortor porttitor accumsan. Integer vulputate sem a nibh rutrum consequat. Phasellus rhoncus. Curabitur sagittis hendrerit ante. Pellentesque pretium lectus id turpis. Nulla est. Etiam dictum tincidunt diam. Pellentesque arcu.
+            Jako naše služby můžeme nabídnout náš závoz, nebo zavážení na míru na zakázku. Náš závoz je určen pro jednotlivce, ale i pro firmy, klíčovou částí je, že se v něm vybírají jídla z našeho jídelního lístku. Zavážení na míru na zakázku je pro větší skupiny, tedy pro firmy, školy, či školky, které si většinou vybárají vlastní jídla, které chtějí abychom jim přivezli. Dříve jsme i pořádali svatby a provozovali kantýny, to ovšem dnes již neděláme.
         </article>
         <article class="caterings">
             <article class="left">
@@ -54,7 +56,8 @@
                     <h2>Kateringy</h2>
                     <hr class="line"></hr>
                 </article>
-                <section class="text">Jsme rodinná firma. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean vel massa quis mauris vehicula lacinia. Fusce aliquam vestibulum ipsum. Vivamus porttitor turpis ac leo. Pellentesque sapien. Praesent in mauris eu tortor porttitor accumsan. Integer vulputate sem a nibh rutrum consequat. Phasellus rhoncus. Curabitur sagittis hendrerit ante. Pellentesque pretium lectus id turpis. Nulla est. Etiam dictum tincidunt diam. Pellentesque arcu.</section>
+                <section class="text">
+                    Jedna z našich služeb pokrývá i kateringy. Můžete si nás objednat a my vám na míru přivezeme a zařídíme katering podle vašich specifikací. Většinou na kateringy používáme jednorázové nádobí. Jídlo pro katering přivážíme v termo bednách, které si také co nejdříve odvezeme, tedy pokud budete potřebovat nějakou chvíli jídlo z kateringu po přívozu skladovat, tak si to budete muset vyřídit sami.</section>
             </article>
             <section class="picture">
                 <img src="images/food2.jpg" alt="profile">
@@ -66,7 +69,8 @@
                     <h2>Rozvoz jídla</h2>
                     <hr class="line"></hr>
                 </article>
-                <section class="text">Jsme rodinná firma. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean vel massa quis mauris vehicula lacinia. Fusce aliquam vestibulum ipsum. Vivamus porttitor turpis ac leo. Pellentesque sapien. Praesent in mauris eu tortor porttitor accumsan. Integer vulputate sem a nibh rutrum consequat. Phasellus rhoncus. Curabitur sagittis hendrerit ante. Pellentesque pretium lectus id turpis. Nulla est. Etiam dictum tincidunt diam. Pellentesque arcu.</section>
+                <section class="text">
+                    V naší trase zavažíme každý všední den jídla, které si naši zákazníci objednávají přes jídelní lístky. Objednávat mohou jednotlivci, ale i vícero lidí. Z jídelního lístku si můžete objednat vícero jídel i vícero typů jídel. Jídlo vám přivezeme většinou před objedem v zavírací krabičce, nebo zataveném boxu. Typy jídel, které většinou nabízíme na každá den jsou polívka, salát a 3 hlavní jídla.</section>
             </article>
             <section class="picture">
                 <img src="images/food1.jpg" alt="profile">
