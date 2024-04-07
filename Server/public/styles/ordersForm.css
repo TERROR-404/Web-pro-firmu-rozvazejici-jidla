@@ -77,6 +77,10 @@ main  .register{
     margin-bottom: 30px;
     border: none;
 }
+#submit:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
 
 .number{
     width: 35px;

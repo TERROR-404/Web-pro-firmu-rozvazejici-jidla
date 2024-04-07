@@ -41,27 +41,27 @@ main.innerHTML = `<article class="header">
     <section class="type">Hlavní jídla</section>
     <article class="foods">
         <section class="food">${data[6].name}<input type="number" class="number" foodId="${data[6].id}" min="0"/><section class="price">${data[6].price},- </section></section>
-        <section class="food">${data[7].name}<input type="number" class="number" foodId="${data[7].id} min="0"/><section class="price">${data[7].price},- </section></section>
-        <section class="food">${data[8].name}<input type="number" class="number" foodId="${data[8].id} min="0"/><section class="price">${data[8].price},- </section></section>
+        <section class="food">${data[7].name}<input type="number" class="number" foodId="${data[7].id}" min="0"/><section class="price">${data[7].price},- </section></section>
+        <section class="food">${data[8].name}<input type="number" class="number" foodId="${data[8].id}" min="0"/><section class="price">${data[8].price},- </section></section>
     </article>
 </article>
 <article class="salad">
     <section class="type">Salát</section>
-    <section class="food">${data[9].name}<input type="number" class="number" foodId="${data[9].id} min="0"/><section class="price">${data[9].price},- </section></section>
+    <section class="food">${data[9].name}<input type="number" class="number" foodId="${data[9].id}" min="0"/><section class="price">${data[9].price},- </section></section>
 </article>
 </article>
 <article class="day">
 <h2>Středa ${addDays(date, 2).toLocaleDateString("cs-CZ")}</h2>
 <article class="soup">
     <section class="type">Polévka</section>
-    <section class="food">${data[10].name}<input type="number" class="number" foodId="${data[10].id} min="0"/><section class="price">${data[10].price},- </section></section>
+    <section class="food">${data[10].name}<input type="number" class="number" foodId="${data[10].id}" min="0"/><section class="price">${data[10].price},- </section></section>
 </article>
 <article class="mainFoods">
     <section class="type">Hlavní jídla</section>
     <article class="foods">
-        <section class="food">${data[11].name}<input type="number" class="number" foodId="${data[11].id} min="0"/><section class="price">${data[11].price},- </section></section>
-        <section class="food">${data[12].name}<input type="number" class="number" foodId="${data[12].id} min="0"/><section class="price">${data[12].price},- </section></section>
-        <section class="food">${data[13].name}<input type="number" class="number" foodId="${data[13].id} min="0"/><section class="price">${data[13].price},- </section></section>
+        <section class="food">${data[11].name}<input type="number" class="number" foodId="${data[11].id}" min="0"/><section class="price">${data[11].price},- </section></section>
+        <section class="food">${data[12].name}<input type="number" class="number" foodId="${data[12].id}" min="0"/><section class="price">${data[12].price},- </section></section>
+        <section class="food">${data[13].name}<input type="number" class="number" foodId="${data[13].id}" min="0"/><section class="price">${data[13].price},- </section></section>
     </article>
 </article>
 <article class="salad">
