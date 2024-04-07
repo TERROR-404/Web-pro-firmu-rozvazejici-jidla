@@ -105,8 +105,8 @@ app.get("/food", async (req, res) => { // server vrati jidelni listek na dalsi t
 
     let Foods = [];
 
-console.log("jidlo odeslano");
-console.log(firstDate);
+    console.log("jidlo odeslano");
+    console.log(firstDate);
 
     try {
         const result = await client.query(`SELECT *
@@ -128,11 +128,35 @@ console.log(firstDate);
 
 })
 
-app.get("/orders", (req, res) => { // server vrati strance formular z ulozenych dat o objednavce uzivatele
+app.post("/orders", async (req, res) => { // stranka posle serveru novy formular
+    let data = req.body;
+    console.log(data);
+    //console.log(req.get("X-Auth"));
+    let result = await client.query(`SELECT "customerId"
+    FROM "Tokens"
+    WHERE "webToken" = $1`, [req.get("X-Auth")])
+    let customerId = result.rows[0].customerId;
+    //console.log(customerId);
+    try {
+        const result = await client.query(`INSERT INTO "Order" ("customerId")
+        VALUES ($1)
+        RETURNING "id"`, [customerId])
+        let orderId = result.rows[0].id;
+        //console.log(orderId);
+        for (const foodId in data) {
+            /*console.log(orderId);
+            console.log(foodId);
+            console.log(data[foodId]);*/
+            await client.query(`INSERT INTO "FoodOrder" ("orderId", "foodId", "quantity")
+        VALUES
+        ($1, $2, $3)`,[orderId, foodId, data[foodId]])
+        }
 
-})
-app.post("/orders", (req, res) => { // stranka posle serveru novy formular
+    } catch (error) {
 
+    }
+    res.status(202)
+    res.send("Prijato")
 })
 app.patch("/orders", (req, res) => { // stranka posle serveru zmenene data formulare
 

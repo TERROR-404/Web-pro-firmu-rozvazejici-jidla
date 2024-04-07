@@ -215,8 +215,13 @@ const token = localStorage.getItem("token")
 const login = document.getElementById("login");
 const logout = document.getElementById("logout");
 
+let orderLink = document.querySelector("ul li:first-child");
+
+
+
 if (token) {
     login.style.display = "none";
+    orderLink.innerHTML=`<a href="ordersForm.html" class="button">Jídelní lístek</a>`;
 }
 else logout.style.display = "none";
 
