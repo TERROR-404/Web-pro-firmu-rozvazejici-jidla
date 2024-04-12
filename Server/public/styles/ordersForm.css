@@ -14,46 +14,36 @@ main  .day{
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+    margin-left: -2%;
 }
 main  .day > .soup{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    column-gap: 5%;
+    column-gap: 1%;
 }
 main  .day > .mainFoods{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    column-gap: 5%;
+    column-gap: 1%;
     
 }
 main  .day > .salad{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    column-gap: 5%;
+    column-gap: 1%;
 }
 .food{
     width: 100%;
     display: grid;
-    grid-template-columns: 12fr 1fr 1fr;
+    grid-template-columns: 4fr 0.5fr 0.5fr;
+    column-gap: 1%;
 }
 .price{
     display: flex;
     justify-content: right;
-}
-main  .login{
-    background-color: #40A4B9;
-    font-weight: 600;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 15px;
-    margin-top: 50px;
-    margin-bottom: 30px;
 }
 main  .register{
     color: black;
@@ -74,7 +64,6 @@ main  .register{
     padding-right: 40px;
     border-radius: 15px;
     margin-top: 50px;
-    margin-bottom: 30px;
     border: none;
 }
 #submit:hover{
@@ -83,18 +72,23 @@ main  .register{
 }
 
 .number{
-    width: 35px;
+    width: 80%;
     height: 25px;
 }
 .foods{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    row-gap: 5px;
 }
 
 @media(max-width: 1420px){
+    main{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     main  .day{
         font-size: 15px;
+        padding: 10px;
     }
 }
 @media(max-width: 1060px){
@@ -116,8 +110,12 @@ main  .register{
     main  .day{
         font-size: 11px;
     }
-    main  .login, #submit{
+    #submit{
         font-size: 15px;
+    }
+    .number{
+        height: 20px;
+        font-size: 10px;
     }
 }
 @media(max-width: 480px){
@@ -129,7 +127,10 @@ main  .register{
     main  .day{
         font-size: 11px;
     }
-    main  .login, #submit{
+    #submit{
         font-size: 9px;
+    }
+    .food{
+        column-gap: 3px;
     }
 }

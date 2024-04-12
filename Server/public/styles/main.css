@@ -18,6 +18,7 @@ a{
     color: white;
 }
 header{
+    position: fixed;
     width: 100%;
     height: 114px;
     display: flex;
@@ -54,6 +55,7 @@ header > ul {
     font-weight: 600;
     line-height: normal;
     list-style: none;
+    position: relative;
 }
 header > ul > li{
     height: 100%;
@@ -109,6 +111,7 @@ header > ul > li > .login:hover{
     justify-content: flex-start;
     align-items: flex-end;
     column-gap: 10%;
+    margin-top: 114px;
 }
 .presentation > .quote{
     color: white;
@@ -178,6 +181,9 @@ main{
     position: absolute;
     width: 50%;
 }
+#hamburgerMenu{
+    display:none;
+}
 
 @media(max-width: 1400px){
     h1{
@@ -204,9 +210,7 @@ main{
     }
     header > ul > li > .login > i{
        font-size: 25px; 
-    }
-    .presentation{
-    }    
+    }   
     .presentation > .quote{
         font-size: 32px;
         line-height: 37px;
@@ -219,6 +223,7 @@ main{
 @media(max-width: 820px){
     header{
         height: 80px;
+        justify-content: space-between;
     }
     header > .logo{
         width: 150px;
@@ -227,14 +232,9 @@ main{
         height: 50px;
         margin-left: 10px;
     }
-    header > ul > li > .button{
-        border: 4px solid white;
-    }
-    header > ul > li > .login{
-        border: 4px solid white;
-    }
     .presentation{
         height: 217px;
+        margin-top: 80px;
     }
     .presentation > .quote{
         font-size: 27px;
@@ -249,87 +249,54 @@ main{
     footer{
         font-size: 15px;
     }
+    
+    header > ul{
+        display: none;
+        position: absolute;
+        top: 76px;
+        background-color: #40a5b9af;
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    header > ul > li{
+        height: 25%;
+        width: 100%;
+    }
+    #hamburgerMenu{
+        color: white;
+        font-weight: 900;
+        display: flex;
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        aspect-ratio: 1/1;
+    }
+    header > ul > li > .button{
+        height: 70%;
+        width: 50%;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    header > ul > li > .login{
+        height: 70%;
+        width: 50%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
 }
 
 @media(max-width: 720px){
-    header > ul {
-        font-size: 13px;
-    }
-    header > ul > li > .button{
-        width: auto;
-    }
-    header > ul > li > .login{
-        margin-right: 10%;
-        column-gap: 5px;
-    }
-    header > ul > li > .login > i{
-       font-size: 20px; 
-    }
-    .presentation{
-    }  
     .presentation > .quote{
         font-size: 23px;
         line-height: 28px;
     }
     .presentation > img{
         margin-right: 10px;
-    }
-}
-@media(max-width: 530px){
-    .header{
-        width: 70%;
-    }
-}
-@media(max-width: 460px){
-    header > #bar{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        color: white;
-        font-size: 40px;
-        margin-right: 20px;
-    }
-
-    header > ul {
-        height: auto;
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        row-gap: 0px;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: normal;
-        list-style: none;
-    }
-    header > ul > li{
-        height: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header > ul > li > .button{
-        height: 100%;
-        width: 100%;
-        padding-right: 0%;
-        padding-left: 0%;
-        border: none;
-        border-radius: 0px;
-    }
-    header > ul > li > .login{
-        height: 100%;
-        width: 100%;
-        padding-right: 0px;
-        padding-left: 0px;
-        border: 7px solid white;
-        border-radius: 0px;
-        margin-right: 0%;
-        margin-left: 0%;
-        column-gap: 20px;
-    }
-    header > ul > li > .login > i{
-       font-size: 40px; 
     }
 }
